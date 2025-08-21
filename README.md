@@ -3,6 +3,8 @@
 This project demonstrates a horizontal carousel built entirely with modern CSS, without any JavaScript.  
 See [`index.html`](css-carousel/index.html) for the implementation.
 
+**Live version:** [https://grzegorzly.github.io/css-carousel/](https://grzegorzly.github.io/css-carousel/)
+
 ## Features
 
 - **Pure CSS carousel**: No JavaScript required.
@@ -20,4 +22,4 @@ See [`index.html`](css-carousel/index.html) for the implementation.
 - [CSS Anchor Positioning (Draft)](https://drafts.csswg.org/css-anchor-position/)
 - [CSS Scroll-driven Animations (Draft)](https://drafts.csswg.org/css-scroll-animations-1/)
 
-> **Note:** Some features used in this project are experimental and may not be supported in all browsers. Please check browser compatibility before using them in production.
+> **Note:** Some features used in this project are experimental and may not be supported in all browsers. Please check browser compatibility before using
