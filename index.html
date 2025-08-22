@@ -6,9 +6,9 @@
     <title>CSS Carousel Demo</title>
     <style>
       :root {
-        --base-color: #7549c0;
-        --card-color: #48466d;
-        --bg-color: #0f0e12;
+        --base-color: #455cf0;
+        --card-color: #3b386e;
+        --bg-color: #191720;
       }
 
       body {
@@ -43,17 +43,21 @@
       .carousel::-webkit-scrollbar {
         display: none;
       }
+
       .carousel::scroll-button(left),
       .carousel::scroll-button(right) {
         border: none;
         background-color: var(--base-color);
         font-family: monospace;
-        font-size: 2rem;
+        font-size: 1.5em;
         color: white;
         height: 40px;
         width: 40px;
         border-radius: 50%;
-        padding-bottom: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
         cursor: pointer;
         position: fixed;
         position-anchor: --carousel;
@@ -82,11 +86,19 @@
         flex: 0 0 20em;
         aspect-ratio: 5/3;
         background-color: var(--card-color);
-        padding: 1em;
         border-radius: 0.5em;
         text-align: center;
         align-content: center;
         color: white;
+        display: flex; 
+        align-items: stretch;
+        overflow: hidden;
+      }
+
+      .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
 
       .card::scroll-marker {
@@ -110,18 +122,18 @@
   </head>
   <body>
     <div class="carousel">
-      <div class="card">card 1</div>
-      <div class="card">card 2</div>
-      <div class="card">card 3</div>
-      <div class="card">card 4</div>
-      <div class="card">card 5</div>
-      <div class="card">card 6</div>
-      <div class="card">card 7</div>
-      <div class="card">card 8</div>
-      <div class="card">card 9</div>
-      <div class="card">card 10</div>
-      <div class="card">card 11</div>
-      <div class="card">card 12</div>
+      <div class="card"><img fetchpriority="high" src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?cs=srgb&dl=pexels-pixabay-355465.jpg&fm=jpg&w=640&h=348" alt="img-1" height="400"/></div>
+      <div class="card"><img fetchpriority="high" src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?cs=srgb&dl=pexels-pixabay-355465.jpg&fm=jpg&w=640&h=348" alt="img-2" height="400"/></div>
+      <div class="card"><img fetchpriority="high" src="https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?cs=srgb&dl=pexels-pixabay-355465.jpg&fm=jpg&w=640&h=348" alt="img-3" height="400"/></div>
+      <div class="card"><img fetchpriority="high" src="https://images.pexels.com/photos/593655/pexels-photo-593655.jpeg?cs=srgb&dl=pexels-pixabay-355465.jpg&fm=jpg&w=640&h=348" alt="img-4" height="400"/></div>
+      <div class="card"><img fetchpriority="low" src="https://images.pexels.com/photos/381739/pexels-photo-381739.jpeg?cs=srgb&dl=pexels-pixabay-355465.jpg&fm=jpg&w=640&h=348" alt="img-5" height="400"/></div>
+      <div class="card"><img fetchpriority="low" src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-355465.jpg&fm=jpg&w=640&h=348" alt="img-6" height="400"/></div>
+      <div class="card"><img fetchpriority="low" src="https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?cs=srgb&dl=pexels-pixabay-355465.jpg&fm=jpg&w=640&h=348" alt="img-7" height="400"/></div>
+      <div class="card"><img fetchpriority="low" src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-pixabay-355465.jpg&fm=jpg&w=640&h=348" alt="img-8" height="400"/></div>
+      <div class="card"><img fetchpriority="low" src="https://images.pexels.com/photos/462162/pexels-photo-462162.jpeg?cs=srgb&dl=pexels-pixabay-355465.jpg&fm=jpg&w=640&h=348" alt="img-9" height="400"/></div>
+      <div class="card"><img fetchpriority="low" src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-pixabay-355465.jpg&fm=jpg&w=640&h=348" alt="img-10" height="400"/></div>
+      <div class="card"><img fetchpriority="low" src="https://images.pexels.com/photos/206648/pexels-photo-206648.jpeg?cs=srgb&dl=pexels-pixabay-355465.jpg&fm=jpg&w=640&h=348" alt="img-11" height="400"/></div>
+      <div class="card"><img fetchpriority="low" src="https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?cs=srgb&dl=pexels-pixabay-355465.jpg&fm=jpg&w=640&h=348" alt="img-12" height="400"/></div>
     </div>
   </body>
 </html>
